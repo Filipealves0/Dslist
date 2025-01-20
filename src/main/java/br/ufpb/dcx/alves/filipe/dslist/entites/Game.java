@@ -1,4 +1,4 @@
-package br.ufpb.dcx.alves.filipe.dslist;
+package br.ufpb.dcx.alves.filipe.dslist.entites;
 
 import jakarta.persistence.*;
 

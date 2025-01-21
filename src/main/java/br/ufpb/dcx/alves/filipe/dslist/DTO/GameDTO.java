@@ -1,6 +1,4 @@
 package br.ufpb.dcx.alves.filipe.dslist.DTO;
-
-
 import br.ufpb.dcx.alves.filipe.dslist.entites.Game;
 
 public class GameDTO {

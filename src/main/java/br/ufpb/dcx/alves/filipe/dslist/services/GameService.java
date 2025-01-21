@@ -1,5 +1,6 @@
 package br.ufpb.dcx.alves.filipe.dslist.services;
 
+import br.ufpb.dcx.alves.filipe.dslist.DTO.GameDTO;
 import br.ufpb.dcx.alves.filipe.dslist.entites.Game;
 import br.ufpb.dcx.alves.filipe.dslist.repositories.GameRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,8 +15,8 @@ public class GameService {
     @Autowired
     private GameRepository gameRepository;
 
-    public List<Game> findAll(){
-       var result = gameRepository.findAll();
-       return result;
+    public List<GameDTO> findAll(){
+       List<Game> result = gameRepository.findAll();
+       return result.stream().map(x -> new GameDTO(x)).toList();
     }
 }

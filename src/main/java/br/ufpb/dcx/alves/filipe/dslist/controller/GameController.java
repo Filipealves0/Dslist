@@ -1,6 +1,7 @@
 package br.ufpb.dcx.alves.filipe.dslist.controller;
 
 
+import br.ufpb.dcx.alves.filipe.dslist.DTO.GameDTO;
 import br.ufpb.dcx.alves.filipe.dslist.entites.Game;
 import br.ufpb.dcx.alves.filipe.dslist.services.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,8 @@ public class GameController {
     private GameService gameService;
 
     @GetMapping
-    public List<Game> findAl() {
-        return gameService.findAll();
+    public List<GameDTO> findAll() {
+        List<GameDTO> result = gameService.findAll();
+        return result;
     }
 }

@@ -1,6 +1,8 @@
 package br.ufpb.dcx.alves.filipe.dslist.DTO;
 import br.ufpb.dcx.alves.filipe.dslist.entites.Game;
 
+
+// versão go game reduzida
 public class GameDTO {
     private Long id;
     private String title;
